@@ -33,7 +33,6 @@ GCP_PREFIX_FORMAT_LIST_PATH = os.path.join(  # type: str
 )
 
 
-@functools.lru_cache(maxsize=1)
 def prefixes_lengths(local=False):
     # type: (bool) -> Dict
     """
