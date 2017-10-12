@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """
 A library for parsing GTINs ("Global Trade Item Numbers"—also known as UPC/EAN/JAN/ISBN).
 
@@ -378,7 +379,6 @@ class GTIN:
                     ('digits for a GTIN with a length of %s.' % str(length))
                 )
 
-    @functools.lru_cache(maxsize=None)
     def get_check_digit(self):
         # type: () -> Optional[str]
         r = self.raw
@@ -399,7 +399,6 @@ class GTIN:
         # type: () -> Optional[str]
         return self.get_check_digit()
 
-    @functools.lru_cache(maxsize=None)
     def get_gcp(self):
         # type: () -> Optional[str]
         gp_l = gcp_prefixes_lengths()
