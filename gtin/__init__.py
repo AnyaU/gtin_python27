@@ -449,7 +449,6 @@ class GTIN:
         # type: () -> float
         return float(str(self))
 
-    @functools.lru_cache(maxsize=None)
     def __str__(self):
         # type: () -> str
         if self.raw is None:
