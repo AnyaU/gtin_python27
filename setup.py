@@ -29,7 +29,7 @@ with open(
     )
 
 setup(
-    name='gtin',
+    name='gtin_python27',
 
     version='0.1.4',
 
