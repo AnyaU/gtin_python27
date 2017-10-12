@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """
 A python package for parsing GTINs ("Global Trade Item Numbers"—also known as UPC/EAN/JAN/ISBN).
 
